@@ -16,8 +16,8 @@ const LocationDetector = () => {
 
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
-                params.set('lat', position.coords.latitude);
-                params.set('lon', position.coords.longitude);
+                params.set('latitude', position.coords.latitude);
+                params.set('longitude', position.coords.longitude);
                 setLoading(false);
                 router.push(`/current?${params.toString()}`);
             })
