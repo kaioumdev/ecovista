@@ -1,8 +1,7 @@
 
-const AQIPage = async ({ params }) => {
-    const locationData = await getLocationByName(params?.name);
+const AQIPage = async () => {
     return (
-        <div>page</div>
+        <div>AQI PAGE</div>
     )
 }
 
